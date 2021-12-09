@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        const {useState} = React
+
+        {name , setName} = useState
+
+        function handleinput(e){
+            const r =e.target.value
+            setName(r)
+        }
+        <p id= na>Hello ,<h3>{name}</h3></p>
+        <label>Name</label>
+        <input type="text" name=Name  onChange={handleinput}/>
+        <button onclick={handleClick} value={name}>Submit</button>
+
+        <script>
+            function handleClick(name){
+               p =document.getElementById(na).innerHTML(name)
+               return p
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <title>
+       Prime number
+    </title>   
+     <body>
+        <script>
+            let num=2
+            document.write('Prime numbers from to 100 </br>' )
+            let r=[]
+            while(num<100){
+                flag=1
+                for(let i=2;i<=num/2 ; i++){
+                    if(num % i == 0) {
+                        flag =0
+                    }
+                }
+                if(flag==1){
+                    r.push(num)
+                }
+
+                num++
+            }
+            document.write(r ,'</br>')
+        </script>
+    </body>
+</html>
